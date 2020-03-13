@@ -16,6 +16,7 @@
 		453F3D9B241B0A6A0087814C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 453F3D99241B0A6A0087814C /* LaunchScreen.storyboard */; };
 		453F3DA6241B0A6A0087814C /* ClickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453F3DA5241B0A6A0087814C /* ClickerTests.swift */; };
 		453F3DB1241B0A6A0087814C /* ClickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453F3DB0241B0A6A0087814C /* ClickerUITests.swift */; };
+		453F3DBF241B45690087814C /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453F3DBE241B45690087814C /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		453F3DAC241B0A6A0087814C /* ClickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		453F3DB0241B0A6A0087814C /* ClickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerUITests.swift; sourceTree = "<group>"; };
 		453F3DB2241B0A6A0087814C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		453F3DBE241B45690087814C /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				453F3D8B241B0A670087814C /* AppDelegate.swift */,
 				453F3D8D241B0A670087814C /* SceneDelegate.swift */,
+				453F3DBE241B45690087814C /* Observable.swift */,
 				453F3D92241B0A670087814C /* ContentView.swift */,
 				453F3D94241B0A6A0087814C /* Assets.xcassets */,
 				453F3D99241B0A6A0087814C /* LaunchScreen.storyboard */,
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				453F3D91241B0A670087814C /* Clicker.xcdatamodeld in Sources */,
+				453F3DBF241B45690087814C /* Observable.swift in Sources */,
 				453F3D8C241B0A670087814C /* AppDelegate.swift in Sources */,
 				453F3D93241B0A670087814C /* ContentView.swift in Sources */,
 				453F3D8E241B0A670087814C /* SceneDelegate.swift in Sources */,
