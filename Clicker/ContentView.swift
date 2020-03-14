@@ -51,6 +51,8 @@ struct headerValues:View{
     }
 }
 
+
+
 //Place to buy new animals
 struct Shop:View{
     @EnvironmentObject var MyAnimals:Observable
@@ -102,8 +104,34 @@ struct ProductInShop:View{
 //A row for the bought animals in the main view, will generate income on a per second basis
 struct AnimalInZoo:View{
     @State var resident:Animal
+    @State var number = 1
+    @EnvironmentObject var Cash:Observable
     var body: some View{
-        Text(resident.picture)
+        HStack{
+            Button(action: {self.Cash.Money = self.Cash.Money + self.resident.incrementVal*10}){
+                Text(resident.picture)
+            }.buttonStyle(BorderlessButtonStyle())
+            Text("\(number)")
+            Spacer()
+            Button(action: {
+                self.BuyAnother()
+            }){
+                Text("Buy Another for: \(resident.cost*number*2)?")
+            }.buttonStyle(BorderlessButtonStyle())
+        }
+    
+        
+        
+    }
+    
+    func BuyAnother(){
+        if(resident.cost*number*2<=Cash.Money){
+            number += 1
+            Cash.Money -= resident.cost*number*2
+        }
+        else{
+            print("insufficient funds")
+        }
     }
 }
 
